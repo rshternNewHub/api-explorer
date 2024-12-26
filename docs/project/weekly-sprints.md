@@ -4,8 +4,8 @@
 **Sprint 1: Foundation Setup**
 
 ### Goals
-- [ ] Project setup with Vite + TypeScript
-- [ ] Module Federation configuration
+- [x] Project setup with Vite + TypeScript
+- [x] Module Federation configuration
 - [ ] Basic shell application
 - [ ] CI/CD pipeline setup
 
