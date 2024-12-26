@@ -27,4 +27,8 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: false,
   },
+  server: {
+    port: 4000, // For host
+    strictPort: true // Forces Vite to use this specific port
+  }
 });

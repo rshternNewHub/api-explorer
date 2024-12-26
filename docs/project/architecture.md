@@ -52,3 +52,27 @@ interface PluginRegistry {
 - Azure Storage
 - Azure AD B2C
 
+## Micro-Frontend Setup
+
+### Port Configuration
+- Host Application: 4000
+- Analytics MFE: 4001
+- Response Viewer MFE: 4002
+- Request Builder MFE: 4003
+- Collection Manager MFE: 4004
+
+### Development Scripts
+The project uses concurrently to run all MFEs in development:
+```npm run dev:all``` will start all applications
+
+### Project Structure
+
+api-explorer/
+├── apps/
+│   ├── host/               # Main shell application
+│   ├── request-builder/    # Request creation and management
+│   ├── response-viewer/    # Response display and analysis
+│   ├── collection-manager/ # API collections and organization
+│   └── analytics/         # Usage and performance analytics
+
+For detailed information about development scripts, validation, and tooling setup, see [Development Setup](./dev-setup.md).

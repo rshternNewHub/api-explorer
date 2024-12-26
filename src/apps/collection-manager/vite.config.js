@@ -25,7 +25,7 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: false,
   },
-  preview: {
+  server: {
     host: "localhost",
     port: 4004,
     strictPort: true,
