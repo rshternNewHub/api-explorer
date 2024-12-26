@@ -1,3 +1,12 @@
+# API Explorer
+
+Modern API development and testing platform built with React, TypeScript, and Module Federation.
+
+## Project Overview
+API Explorer is a hybrid application combining Micro-Frontends and Plugin architecture to create a flexible, extensible API development environment.
+
+## Repository Structure
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
