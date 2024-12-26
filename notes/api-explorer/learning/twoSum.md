@@ -1,4 +1,5 @@
 TwoSum problem from leetCode - https://leetcode.com/problems/two-sum/description/
+Tutorial - https://www.youtube.com/watch?v=_CoCO62fn_E
 
 # Two Sum
 
