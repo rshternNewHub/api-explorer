@@ -254,3 +254,4 @@ Week 7-8: Advanced Patterns
 4. Authentication
    - Strategy Pattern for auth methods
    - Decorator for request enhancement
+   

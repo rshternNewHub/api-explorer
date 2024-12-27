@@ -1,33 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import SideNav from './components/sideNav/sideNav';
+import Main from './components/main/main';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: React.FC = () => {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='h-screen flex flex-col'>
+          <div className="-16 bg-white border-b">
+            <Header></Header>
+          </div>
+          <div className="flex flex-1 overflow-hidden w-full">
+            <div className="flex flex-1 overflow-hidden w-3/4">
+              <div className='w-1/3 border-r bg-white overflow-y-auto'>
+                <SideNav></SideNav>
+              </div>
+              <div className='w-2/3 flex-1 overflow-y-auto bg-gray-50'>
+                <Main></Main>
+              </div>
+            </div>
+            <div className="w-1/4 border-l bg-white overflow-y-auto">
+              Plugins Panel
+            </div>
+          </div>
+          <div className="-16 bg-white border-t">
+            <Footer></Footer>
+          </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
     </>
   )
 }
