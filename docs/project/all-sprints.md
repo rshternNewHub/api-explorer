@@ -10,7 +10,7 @@ Week 1 Goals:
 
 2. Algorithm Learning
    - [x] Two Sum Problem
-   - [ ] Valid Parentheses
+   - [X] Valid Parentheses
    - [ ] Best Time to Buy/Sell Stock
 
 3. Documentation

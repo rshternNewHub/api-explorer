@@ -12,9 +12,9 @@
 #### Daily Schedule
 - **1h**: Algorithms & Data Structures
   - Arrays & Hash Tables
-  - Two Sum Problem
-  - Valid Parentheses
-  - LeetCode Practice
+  - Two Sum Problem [X]
+  - Valid Parentheses [X]
+  - LeetCode Practice [X]
 
 - **2h**: TypeScript & Modern JS
   - Advanced TypeScript Types
@@ -23,10 +23,10 @@
   - Module Systems
 
 - **2h**: Project Implementation
-  - Vite Setup
-  - TypeScript Configuration
-  - Module Federation
-  - Basic Shell Structure
+  - Vite Setup [X]
+  - TypeScript Configuration [X]
+  - Module Federation [X]
+  - Basic Shell Structure [X]
 
 ### Week 2: React Advanced & Architecture
 [Similar structure for each week...]

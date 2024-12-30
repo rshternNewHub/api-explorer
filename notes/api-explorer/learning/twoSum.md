@@ -86,15 +86,15 @@ const TwoSum = (nums, target) => {
   }
   return []; //if we don’t find the solution
 }
+```
 
-/*
 if you console.log the output you would get the result very fast - result = [0,1]
 You have to explain the complexity that is o of n because we only visiting the number once
 And the lookup inside the map is very fast
-*/
+
 
 ## Brute Force solution
-
+```javascript
 //Inputs:
 const nums = [2,7,11,15], target = 9;
 
