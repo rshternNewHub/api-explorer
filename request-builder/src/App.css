@@ -1,0 +1,9 @@
+.request-builder {
+    display: flex;
+}
+
+.w-fill {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+}

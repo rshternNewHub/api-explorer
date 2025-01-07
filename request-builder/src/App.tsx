@@ -1,12 +1,21 @@
 import React from 'react';
+import MethodSelector from './components/methodSelector/methodSelector';
+import Input from './components/input/input';
+import AdditionalOptions from './components/additionalOptions/additionalOptions';
 import './App.css';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h2>Request Builder</h2>
-      <p>Request Builder Component Content</p>
-    </div>
+    <>
+      <div className="request-builder w-fill">
+        <MethodSelector/>
+        <Input />
+      </div>
+      <div className="addOns">
+        <AdditionalOptions />
+      </div>
+      <hr/>
+    </>
   );
 };
 
