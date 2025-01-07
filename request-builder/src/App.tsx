@@ -14,7 +14,6 @@ const App: React.FC = () => {
       <div className="addOns">
         <AdditionalOptions />
       </div>
-      <hr/>
     </>
   );
 };
