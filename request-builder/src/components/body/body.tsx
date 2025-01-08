@@ -1,22 +1,39 @@
-import React from "react";
+import React, {useState} from "react";
+import {Copy} from 'lucide-react';
+import CodeMirror from '@uiw/react-codemirror';
+import { json } from '@codemirror/lang-json';
 
 const Body: React.FC = () => {
+    const [value, setValue] = useState("console.log('hello world!');");
+    const onChange = React.useCallback((value: string, viewUpdate: any) => {
+        console.log("value:", value);
+      }, []);
+  
     return(
         <>
             <div className="space-y-4 p-4">
-                <caption className="flex justify-between items-center">
-                    <h3 className="text-sm font-medium">Body</h3>
+                <caption className="flex justify-between items-center">   
+                    <div className="flex justify-between items-center">
+                        <h3 className="text-sm font-medium">Body</h3>
+                        <div className="flex items-center justify-between p-4 border-b">
+                            <h3 className="text-sm text-gray-500">View: </h3>
+                            <button className="text-sm text-blue-600 font-medium hover:text-gray-800">Pretty</button>
+                            <button className="text-sm text-blue-600 font-medium hover:text-gray-800">Raw</button>
+                            <button className="text-sm text-blue-600 font-medium hover:text-gray-800 ">Preview</button>
+                        </div>
+                        <div className="flex">
+                            <button><Copy size={18}/></button>
+                        </div>
+                    </div>
                     <button className="text-blue-600 text-sm">Type</button>
                 </caption>
-                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                    <tbody>
-                        <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                               json body...
-                            </th>
-                        </tr>
-                    </tbody>
-                </table>
+                <CodeMirror
+                value="{}"
+                height="200px"
+                extensions={[json()]}
+                onChange={(value, viewUpdate) => {
+                }}
+                />
             </div>
         </>
     );

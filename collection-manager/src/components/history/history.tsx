@@ -15,11 +15,11 @@ const History:React.FC = () => {
     return(
         <>
         <span>Today</span>
-        <span>Yesterday</span>
+        {/* <span>Yesterday</span>
         <span>Last Week</span>
         <span>Last Two Weeks</span>
         <span>Last Month</span>
-        <span>10/2024</span>
+        <span>10/2024</span> */}
         <Tree />
         <Tree />
         </>
