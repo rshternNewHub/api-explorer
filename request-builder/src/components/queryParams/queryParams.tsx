@@ -1,12 +1,12 @@
 import React from "react";
-
+import {CirclePlus} from 'lucide-react';
 const QueryParams: React.FC = () => {
     return(
         <>
             <div className="space-y-4 p-4">
                 <caption className="flex justify-between items-center">
                     <h3 className="text-sm font-medium">Query Params</h3>
-                    <button className="text-blue-600 text-sm">+ Add</button>            
+                    <button className="text-blue-600 text-sm" title="Add"><CirclePlus size={18} /></button>
                 </caption>
 
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">

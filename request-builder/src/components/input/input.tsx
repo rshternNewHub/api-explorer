@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { FolderPlus, CircleX } from 'lucide-react';
 
 const Input: React.FC = () => {
     const [isSent, setSend] = useState(false);
@@ -23,6 +24,18 @@ const Input: React.FC = () => {
             }}>
                 Send
             </button>
+            <button 
+                className="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-colors"
+                title="Save to Collection"
+                >
+                    <FolderPlus size={18} />
+                </button>
+
+                <button 
+                className="p-2 text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-full transition-colors"
+                title="Clear">
+                    <CircleX size={18} />
+                </button>
             </form>
         </>
     );
