@@ -10,7 +10,7 @@ const Headers: React.FC = () => {
     return(
         <>
             <div className="space-y-4 p-4">
-            <caption className="flex justify-between items-center">
+            <div className="flex justify-between items-center">
                 <h3 className="text-sm font-medium">Request Headers</h3>
                 <IconButton
                 Icon={CirclePlus}
@@ -18,7 +18,7 @@ const Headers: React.FC = () => {
                 label="Add Header"
                 onClick={onAddHeaderClicked}
                 variant="primary"
-                />                        </caption>
+                />                        </div>
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>

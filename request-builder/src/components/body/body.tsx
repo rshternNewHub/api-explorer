@@ -19,7 +19,7 @@ const Body = () => {
     return(
         <>
             <div className="space-y-4 p-4">
-                <caption className="flex justify-between items-center">   
+                <div className="flex justify-between items-center">   
                     <div className="flex justify-between items-center">
                         <div className="flex items-center justify-between p-4 border-b">
                             <h3 className="text-sm text-gray-500">View: </h3>
@@ -58,7 +58,7 @@ const Body = () => {
                     text = {"Type"}
                     variant = 'primary'
                     />
-                </caption>
+                </div>
                 <CodeMirror
                 value="{}"
                 height="200px"
