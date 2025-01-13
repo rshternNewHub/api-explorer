@@ -1,4 +1,5 @@
 import React from "react";
+import TextButton from '../../../../shared/components/buttons/textButton';
 
 interface AuthSection {
     type: 'Bearer' | 'Basic' | 'OAuth2' | 'API Key';
@@ -36,7 +37,11 @@ const Authorization: React.FC = () => {
                                 AccessToken
                             </td>
                             <td className="px-6 py-4 text-right">
-                                <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Authorization Settings</a>
+                            <TextButton 
+                                onClick = {() => {}}
+                                text = {"Authorization Settings"}
+                                variant = 'primary'
+                                />
                             </td>
                         </tr>
                     </tbody>

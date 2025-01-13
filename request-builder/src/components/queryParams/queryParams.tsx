@@ -1,13 +1,24 @@
 import React from "react";
+import IconButton from '../../../../shared/components/buttons/iconButton';
+import TextButton from '../../../../shared/components/buttons/textButton';
 import {CirclePlus} from 'lucide-react';
 const QueryParams: React.FC = () => {
+    const onAddClicked = () => {
+        console.log('Add query Params clicked');
+    }
     return(
         <>
             <div className="space-y-4 p-4">
-                <caption className="flex justify-between items-center">
+                <div className="flex justify-between items-center">
                     <h3 className="text-sm font-medium">Query Params</h3>
-                    <button className="text-blue-600 text-sm" title="Add"><CirclePlus size={18} /></button>
-                </caption>
+                <IconButton
+                Icon={CirclePlus}
+                size="md"
+                label="Add Query Param"
+                onClick={onAddClicked}
+                variant="primary"
+                />
+                </div>
 
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -32,7 +43,11 @@ const QueryParams: React.FC = () => {
                                 products
                             </td>
                             <td className="px-6 py-4 text-right">
-                                <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                <TextButton 
+                                onClick = {() => {}}
+                                text = {"Edit"}
+                                variant = 'primary'
+                                />
                             </td>
                         </tr>
                     </tbody>

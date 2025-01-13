@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import IconButton from '../../../../shared/components/buttons/iconButton';
 import { FolderPlus, CircleX } from 'lucide-react';
 
 const Input: React.FC = () => {
@@ -7,6 +8,14 @@ const Input: React.FC = () => {
     const handleSend = (isActionSent: boolean) => {
         setSend(isActionSent);
     };
+
+    const onAddToCollection = () => {
+        console.log('added to collection');
+    }
+    
+    const onClearClick = () => {
+        console.log('Clear button clicked');
+    }
 
     return (
         <>    
@@ -24,18 +33,20 @@ const Input: React.FC = () => {
             }}>
                 Send
             </button>
-            <button 
-                className="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-colors"
-                title="Save to Collection"
-                >
-                    <FolderPlus size={18} />
-                </button>
-
-                <button 
-                className="p-2 text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-full transition-colors"
-                title="Clear">
-                    <CircleX size={18} />
-                </button>
+            <IconButton
+            Icon={FolderPlus}
+            size="md"
+            label="Save to Collection"
+            onClick={onAddToCollection}
+            variant="secondary"
+            />
+            <IconButton
+            Icon={CircleX}
+            size="md"
+            label="Clear"
+            onClick={onClearClick}
+            variant="secondary"
+            />
             </form>
         </>
     );
