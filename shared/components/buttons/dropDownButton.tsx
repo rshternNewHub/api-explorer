@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { SquareChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 interface DropDownButtonProps {
     size?: 'sm' | 'md' | 'lg';
@@ -41,15 +41,15 @@ const DropDownButton:React.FC<DropDownButtonProps> = ({
         <button 
             onClick={() => setIsOpen(!isOpen)}
             data-dropdown-toggle="dropdown" 
-            className="flex flex-row z-10 items-center py-2 px-6 text-md font-medium bg-white border rounded-l-md hover:bg-gray-50" 
+            className="flex flex-row z-10 items-center py-2.5 px-6 text-md font-medium bg-white border rounded-l-md hover:bg-gray-50" 
             type="button"
             > 
-            <span>{selectedOption}</span>
-            <SquareChevronDown size={sizeMap[size].icon} />
+            <span className="pr-2">{selectedOption}</span>
+            <ChevronDown size={sizeMap[size].icon} />
         </button>
 
         {isOpen && (
-            <div className="absolute right-0 z-10 mt-2 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="absolute left-0 z-10 mt-2 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="py-1">
                     <ul>
                     {optionsEntries.map(([key, value]) => (

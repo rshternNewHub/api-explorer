@@ -20,13 +20,13 @@ const Input: React.FC = () => {
     return (
         <>    
             <form className='inline-flex w-fill'>
-            <div className="mb-6 w-fill">
-                <input type="url" id="url" className="w-full px-3 py-2 border focus:ring-2 focus:ring-blue-500"
+            <div className="w-fill">
+                <input type="url" id="url" className="w-full px-3 py-2.5 border"
                 placeholder="https://example.com"
                 required />
             </div>
             <button type="button" id="send"
-            className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-e-0 border-gray-300 dark:border-gray-700 dark:text-white rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            className="flex flex-row z-10 items-center px-6 text-md font-medium bg-white border rounded-r-md hover:bg-gray-50" 
             onClick={(e) => {
                 e.preventDefault();
                 handleSend(true);

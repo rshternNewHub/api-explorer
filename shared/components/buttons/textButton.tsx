@@ -38,7 +38,7 @@ const TextButton:React.FC<TextButtonProps> = ({
     return(
         <>
             <button className={`
-                font-medium
+                font-medium mx-1
                 ${sizeMap[size].button}
                 ${variantStyles[variant]}
                 ${disabled ? 'opacity-50 cursor-not-allowed' : ''}

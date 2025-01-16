@@ -11,7 +11,7 @@ const Body:React.FC = () => {
         <>
             <div className="flex justify-between items-center">
                 <div className="flex items-center justify-between p-4 border-b">
-                    <h3 className="text-sm text-gray-500">View: </h3>
+                    <h3 className="text-sm text-gray-500 mx-2">View: </h3>
                     <TextButton 
                     size = 'sm'
                     onClick = {() => {}}

@@ -36,7 +36,7 @@ const IconButton: React.FC<IconButtonProps> = ({
 
     const variantStyles = {
         primary: 'text-blue-600 hover:text-blue-600',
-        secondary: 'text-gray-200 hover:text-gray-300',
+        secondary: 'text-gray-600 hover:text-gray-700',
         disabled: 'hover:text-gray-100 text-gray-600',
     };
 
@@ -47,7 +47,6 @@ const IconButton: React.FC<IconButtonProps> = ({
                 disabled={disabled}
                 aria-label={label}
                 className={`
-                    rounded-full
                     transition-colors
                     duration-200
                     flex
@@ -56,10 +55,6 @@ const IconButton: React.FC<IconButtonProps> = ({
                     ${sizeMap[size].button}
                     
                     ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
-                    focus:outline-none
-                    focus:ring-2
-                    focus:ring-blue-500
-                    focus:ring-offset-2
                 `}
             >
                 <Icon size={sizeMap[size].icon} />

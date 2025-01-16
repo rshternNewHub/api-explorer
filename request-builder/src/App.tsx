@@ -10,7 +10,7 @@ const App: React.FC = () => {
   return (
     <>
       <Title />
-      <div className="request-builder w-fill">
+      <div className="request-builder w-fill m-2">
         <MethodSelector/>
         <Input />
       </div>
